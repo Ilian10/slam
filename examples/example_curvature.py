@@ -198,12 +198,12 @@ Fig = splt.mesh_projection(
 
 # Plot Shape Index
 mesh_data['title'] = 'example_mesh.gii Shape Index'
-intensity_data=None
-display_settings=None
+#intensity_data=None
+#display_settings=None
 Fig = splt.mesh_projection(
-    mesh_data=mesh_data,
-    intensity_data=intensity_data,
-    display_settings=display_settings)
+    mesh_data=mesh_data)#,
+    #intensity_data=intensity_data,
+    #display_settings=display_settings)
 # Fig.show()
 Fig.write_html("example_curvature_3.html")
 
@@ -212,7 +212,7 @@ mesh_data['title'] = 'example_mesh.gii Curvedness'
 intensity_data['values'] = curvedness
 display_settings['colorbar_label'] = 'Curvedness'
 Fig = splt.mesh_projection(
-    mesh_data=mesh_data,
+    mesh_data=mesh_data)
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
