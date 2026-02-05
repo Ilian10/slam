@@ -27,7 +27,7 @@ import slam.curvature as scurv
 
 ###############################################################################
 # loading an examplar mesh
-mesh_file = "/envau/work/meca/users/salmi.i/Surf_Hemi_full/sub-CC00050XX01_ses-7201_desc-restore_T2w_nnUNet_split.nii.gz/sub-CC00050XX01_ses-7201_desc-restore_T2w_nnUNet_split_extract_surf_right_hemi_n15.gii"
+mesh_file = "/envau/work/meca/users/salmi.i/Surf_Hemi_full/sub-CC00861XX12_ses-20830_desc-restore_T2w_nnUNet_split.nii.gz/sub-CC00861XX12_ses-20830_desc-restore_T2w_nnUNet_split_extract_surf_right_hemi_n10.gii"
 mesh = sio.load_mesh(mesh_file)
 
 # ###############################################################################
