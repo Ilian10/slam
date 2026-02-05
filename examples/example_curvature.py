@@ -200,7 +200,7 @@ mesh_data = {}
 mesh_data['vertices'] = vertices_translate
 mesh_data['faces'] = mesh.faces
 
-mesh_data['title'] = 'example_mesh.gii'
+mesh_data['title'] = 'example_mesh_n10.gii'
 intensity_data=None
 display_settings= {}
 Fig = splt.mesh_projection(
@@ -208,7 +208,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_html("example_curvature_3.html")
+Fig.write_html("example_curvature_n10.html")
 
 # Plot Curvedness
 # mesh_data['title'] = 'example_mesh.gii Curvedness'
