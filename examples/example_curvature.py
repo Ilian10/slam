@@ -212,7 +212,7 @@ mesh_data['title'] = 'example_mesh.gii Curvedness'
 intensity_data['values'] = curvedness
 display_settings['colorbar_label'] = 'Curvedness'
 Fig = splt.mesh_projection(
-    mesh_data=mesh_data)
+    mesh_data=mesh_data,
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
