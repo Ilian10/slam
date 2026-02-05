@@ -27,7 +27,7 @@ import slam.curvature as scurv
 
 ###############################################################################
 # loading an examplar mesh
-mesh_file = "/envau/work/meca/users/salmi.i/Surf_Hemi_full/sub-CC00861XX12_ses-20830_desc-restore_T2w_nnUNet_split.nii.gz/sub-CC00861XX12_ses-20830_desc-restore_T2w_nnUNet_split_extract_surf_right_hemi_n10.gii"
+mesh_file = "/envau/work/meca/users/salmi.i/Surf_Hemi_full/sub-CC00861XX12_ses-20830_desc-restore_T2w_nnUNet_split.nii.gz/sub-CC00861XX12_ses-20830_desc-restore_T2w_nnUNet_split_extract_surf_right_hemi_n15.gii"
 mesh = sio.load_mesh(mesh_file)
 
 # ###############################################################################
@@ -200,7 +200,7 @@ mesh_data = {}
 mesh_data['vertices'] = vertices_translate
 mesh_data['faces'] = mesh.faces
 
-mesh_data['title'] = 'example_mesh_n10.gii'
+mesh_data['title'] = 'example_mesh_n15.gii'
 intensity_data=None
 display_settings= {}
 Fig = splt.mesh_projection(
@@ -208,7 +208,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_html("example_curvature_n10.html")
+Fig.write_html("example_curvature_n15.html")
 
 # Plot Curvedness
 # mesh_data['title'] = 'example_mesh.gii Curvedness'
