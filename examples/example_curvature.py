@@ -27,7 +27,7 @@ import slam.curvature as scurv
 
 ###############################################################################
 # loading an examplar mesh
-mesh_file = "../examples/data/example_mesh.gii"
+mesh_file = "/envau/work/meca/users/salmi.i/Surf_Hemi_full/sub-CC00050XX01_ses-7201_desc-restore_T2w_nnUNet_split.nii.gz/sub-CC00050XX01_ses-7201_desc-restore_T2w_nnUNet_split_extract_surf_right_hemi_n15.gii"
 mesh = sio.load_mesh(mesh_file)
 
 ###############################################################################
@@ -183,7 +183,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_image("example_curvature_1.png")
+Fig.write_image("example_curvature_1.html")
 
 # Plot Gaussian Curvature
 mesh_data['title'] = 'example_mesh.gii Gaussian Curvature'
@@ -194,7 +194,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_image("example_curvature_2.png")
+Fig.write_image("example_curvature_2.html")
 
 # Plot Shape Index
 mesh_data['title'] = 'example_mesh.gii Shape Index'
@@ -205,7 +205,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_image("example_curvature_3.png")
+Fig.write_image("example_curvature_3.html")
 
 # Plot Curvedness
 mesh_data['title'] = 'example_mesh.gii Curvedness'
@@ -216,7 +216,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_image("example_curvature_4.png")
+Fig.write_image("example_curvature_4.html")
 
 # Plot Quadric K Mean Absolute Change
 mesh_data['vertices'] = quadric.vertices
@@ -229,7 +229,7 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_image("example_curvature_5.png")
+Fig.write_image("example_curvature_5.html")
 
 # Plot Quadric Angular Error 0
 mesh_data['title'] = 'Quadric Angular Error 0'
@@ -239,7 +239,7 @@ Fig = splt.mesh_projection(
     mesh_data=mesh_data,
     intensity_data=intensity_data,
     display_settings=display_settings)
-Fig.write_image("example_curvature_6.png")
+Fig.write_image("example_curvature_6.html")
 
 # Plot Quadric Angular Error 1
 mesh_data['title'] = 'Quadric Angular Error 1'
@@ -250,4 +250,4 @@ Fig = splt.mesh_projection(
     intensity_data=intensity_data,
     display_settings=display_settings)
 # Fig.show()
-Fig.write_image("example_curvature_7.png")
+Fig.write_image("example_curvature_7.html")
